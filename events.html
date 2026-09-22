@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events & Announcements — St. Mary College of Meycauayan PTA</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="St. Mary College of Meycauayan PTA seal">
+      <span class="brand-text">
+        <span class="brand-name">St. Mary College of Meycauayan</span><br>
+        <span class="brand-tag">Parent-Teacher Association</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="officers.html">Officers</a>
+      <a href="events.html" class="active">Events &amp; Announcements</a>
+      <a href="documents.html">Documents</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:48px 0 56px;">
+  <div class="wrap">
+    <div class="eyebrow">Stay in the loop</div>
+    <h1 style="font-size:clamp(1.8rem,3.6vw,2.5rem); max-width:none;">Events &amp; Announcements</h1>
+    <p>Upcoming general assemblies, fundraisers, and school activities the PTA is involved in.</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="wrap">
+    <h2 class="section-title">Upcoming</h2>
+    <p class="section-lede">Replace these with your school's actual dates and details.</p>
+
+    <div class="event-card">
+      <div class="event-date"><span class="month">OCT</span><span class="day">04</span></div>
+      <div class="event-body">
+        <span class="tag">General Assembly</span>
+        <h3>1st Quarter Parent-Teacher Conference</h3>
+        <p>All parents/guardians are invited to meet with class advisers and review 1st quarter report cards. Gymnasium, 8:00 AM–12:00 PM.</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-date"><span class="month">OCT</span><span class="day">18</span></div>
+      <div class="event-body">
+        <span class="tag">Fundraiser</span>
+        <h3>PTA Food Fair</h3>
+        <p>Annual food fair supporting the PTA's classroom improvement projects. Volunteers and booth sign-ups welcome.</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-date"><span class="month">NOV</span><span class="day">08</span></div>
+      <div class="event-body">
+        <span class="tag">Meeting</span>
+        <h3>PTA Board Meeting</h3>
+        <p>Monthly board meeting to review ongoing projects and plan the second-quarter general assembly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="wrap">
+    <h2 class="section-title">Announcements</h2>
+    <div class="event-card">
+      <div class="event-body" style="width:100%;">
+        <span class="tag">Notice</span>
+        <h3>PTA membership dues for SY 2026–2027</h3>
+        <p>Membership forms and dues are now being collected by grade-level representatives through the end of October. See the Documents page for the form.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year"></span> St. Mary College of Meycauayan PTA</span>
+    <a href="contact.html">Get in touch</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

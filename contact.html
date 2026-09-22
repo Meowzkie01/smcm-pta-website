@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — St. Mary College of Meycauayan PTA</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="St. Mary College of Meycauayan PTA seal">
+      <span class="brand-text">
+        <span class="brand-name">St. Mary College of Meycauayan</span><br>
+        <span class="brand-tag">Parent-Teacher Association</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="officers.html">Officers</a>
+      <a href="events.html">Events &amp; Announcements</a>
+      <a href="documents.html">Documents</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:48px 0 56px;">
+  <div class="wrap">
+    <div class="eyebrow">We'd love to hear from you</div>
+    <h1 style="font-size:clamp(1.8rem,3.6vw,2.5rem); max-width:none;">Get in Touch</h1>
+    <p>Reach out with questions, concerns, volunteer interest, or ideas for the PTA.</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <div class="item">
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:pta@smcm.edu.ph">pta@smcm.edu.ph</a></div>
+      </div>
+      <div class="item">
+        <div class="label">Phone</div>
+        <div class="value">(044) 000-0000</div>
+      </div>
+      <div class="item">
+        <div class="label">Address</div>
+        <div class="value">St. Mary College of Meycauayan<br>Meycauayan, Bulacan, Philippines</div>
+      </div>
+      <div class="item">
+        <div class="label">Office hours</div>
+        <div class="value">Monday–Friday, 8:00 AM–5:00 PM</div>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! This form is not yet connected to an email service — see the notes below.');">
+      <label for="name">Full name</label>
+      <input id="name" type="text" placeholder="Juan Dela Cruz" required>
+
+      <label for="email">Email address</label>
+      <input id="email" type="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="How can we help?" required></textarea>
+
+      <button class="btn btn-primary" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year"></span> St. Mary College of Meycauayan PTA</span>
+    <a href="mailto:pta@smcm.edu.ph">pta@smcm.edu.ph</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
